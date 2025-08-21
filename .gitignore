@@ -4,6 +4,9 @@ uv.lock
 # Node
 node_modules/
 
+# OR (if you want to be specific to frontend only)
+frontend/node_modules/
+
 # Python venv
 .venv/
 venv/
