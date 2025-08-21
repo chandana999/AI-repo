@@ -15,7 +15,7 @@ export default function Home() {
   const [inputMessage, setInputMessage] = useState('')
   const [developerMessage, setDeveloperMessage] = useState('You are a helpful AI assistant.')
   const [apiKey, setApiKey] = useState('')
-  const [model, setModel] = useState('gpt-4.1-mini')
+  const [model, setModel] = useState('gpt-4.1-nano')
   const [isLoading, setIsLoading] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
@@ -183,6 +183,7 @@ export default function Home() {
                 onChange={(e) => setModel(e.target.value)}
                 className="input-field"
               >
+                <option value="gpt-4.1-nano">GPT-4.1 Nano</option>
                 <option value="gpt-4.1-mini">GPT-4.1 Mini</option>
                 <option value="gpt-4">GPT-4</option>
                 <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
