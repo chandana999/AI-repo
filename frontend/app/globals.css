@@ -5,6 +5,8 @@
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
+    background-color: #ffffff; /* Explicitly set background to white */
+    color: #111827; /* Default text color to dark gray for contrast */
   }
 }
 
@@ -24,15 +26,21 @@
   }
   
   .input-field {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg 
+           focus:ring-2 focus:ring-primary-500 focus:border-transparent 
+           transition-all duration-200 text-gray-900 bg-white;
   }
   
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-200 flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium 
+           py-3 px-6 rounded-lg transition-all duration-200 
+           flex items-center gap-2 focus:outline-none 
+           focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
   }
   
   .btn-secondary {
-    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-3 px-6 rounded-lg transition-all duration-200;
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium 
+           py-3 px-6 rounded-lg transition-all duration-200;
   }
 }
 
@@ -54,7 +62,7 @@
   background: #94a3b8;
 }
 
-/* Optional: Define slide-up animation if not defined yet */
+/* Slide-up animation */
 @keyframes slide-up {
   from {
     opacity: 0;

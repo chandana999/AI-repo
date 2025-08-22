@@ -573,6 +573,8 @@ video {
 }
   html {
     font-family: 'Inter', system-ui, sans-serif;
+    background-color: #ffffff; /* Explicitly set background to white */
+    color: #111827; /* Default text color to dark gray for contrast */
   }
 .chat-message {
   margin-bottom: 1rem;
@@ -601,10 +603,14 @@ video {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
@@ -1011,7 +1017,7 @@ video {
   background: #94a3b8;
 }
 
-/* Optional: Define slide-up animation if not defined yet */
+/* Slide-up animation */
 @keyframes slide-up {
   from {
     opacity: 0;
