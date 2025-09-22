@@ -1,0 +1,19 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="clearvitals",
+    version="1.0.0",
+    packages=find_packages(),
+    install_requires=[
+        "fastapi==0.104.1",
+        "uvicorn==0.24.0",
+        "python-multipart==0.0.6",
+        "PyPDF2==3.0.1",
+        "pdfplumber==0.10.3",
+        "openai==1.3.0",
+        "numpy==1.24.3",
+        "scikit-learn==1.3.0",
+        "python-dotenv==1.0.0",
+    ],
+    python_requires=">=3.12",
+)

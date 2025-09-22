@@ -14,8 +14,7 @@ from dotenv import load_dotenv
 
 # Import aimakerspace utilities
 import sys
-import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append('..')
 from aimakerspace.text_utils import PDFLoader, CharacterTextSplitter
 from aimakerspace.vectordatabase import VectorDatabase
 from aimakerspace.openai_utils.embedding import EmbeddingModel
