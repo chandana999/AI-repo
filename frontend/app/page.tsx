@@ -421,33 +421,8 @@ export default function Home() {
         </div>
       )}
 
-      <div className="flex-1 w-full px-4 py-4">
-        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 min-h-[500px] max-h-[90vh] flex flex-col">
-          {/* Quick Questions Section - Always at Top */}
-          {chatMode === 'rag' && pdfStatus.pdf_loaded && (
-            <div className="p-4 border-b border-gray-100 bg-blue-50/50">
-              <h4 className="text-sm font-semibold text-blue-900 mb-3">Quick Questions - Click to Ask:</h4>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "What are my abnormal values?",
-                  "Explain my liver function tests", 
-                  "Do I have diabetes indicators?",
-                  "What should I discuss with my doctor?",
-                  "Are my kidney tests concerning?",
-                  "What are my cholesterol levels?"
-                ].map((question, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleQuickQuestion(question)}
-                    className="px-3 py-1.5 rounded-full border border-blue-300 text-sm text-blue-700 bg-white hover:bg-blue-100 transition-colors"
-                  >
-                    {question}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-          
+      <div className="flex-1 max-w-6xl mx-auto w-full px-6 py-8">
+        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 min-h-[500px] max-h-[85vh] flex flex-col">
           <div className="flex-1 overflow-y-auto p-6 space-y-4">
             {messages.length === 0 ? (
               <div className="text-center mt-16 select-none">
