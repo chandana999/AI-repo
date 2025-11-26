@@ -1,0 +1,111 @@
+
+GTM Strategy — Synthetic Data Generation-as-a-Service
+What is Synthetic Data Generation (SDG)?
+Synthetic Data Generation is the process of automatically creating test questions, reference answers, and context data for evaluating LLM and RAG systems. SDG uses knowledge graphs and LLMs to generate realistic test datasets that help measure and improve system performance.
+Key Benefits:
+•	Generate test data without manual annotation
+•	Create complex queries that test system capabilities
+•	Enable early iteration and performance evaluation
+•	Provide directional signals for system improvements
+
+
+Why Enterprises Need SDG
+1. Early Performance Signal
+•	Get high-quality early signal for application performance without waiting for real user data
+•	Critical for early iteration cycles in LLM development
+2. Comprehensive Evaluation
+•	Test systems on complex queries (multi-hop, abstract reasoning)
+•	Systems tend to be very strong on simple evaluation tasks—SDG creates challenging test cases
+3. Cost & Time Efficiency
+•	Avoid expensive manual test data creation
+•	Rapid testset generation for iterative improvement
+4. Quality Assurance
+•	Ensure RAG systems perform well before production deployment
+•	Identify performance gaps and improvement opportunities
+5. Continuous Improvement
+•	Generate new test cases as data evolves
+•	Track performance improvements over time
+
+SDG Types: Query Synthesizers
+1. SingleHopSpecificQuerySynthesizer
+•	Generates questions that can be answered from a single, specific document or context
+•	Direct, factual queries requiring one piece of information
+•	Example: "What is the loan limit for undergraduate students?"
+2. MultiHopAbstractQuerySynthesizer
+•	Creates questions requiring information from multiple sources with abstract reasoning
+•	Combines information across documents with conceptual understanding
+•	Example: "How do repayment plans differ for different income levels?"
+3. MultiHopSpecificQuerySynthesizer
+•	Generates questions needing multiple specific facts from different sources
+•	Requires connecting specific details across documents
+•	Example: "What are the eligibility requirements and repayment options for graduate students?"
+
+Query Generation Process:
+•	Uses LLM to generate personas (who would interact with the data)
+•	Creates scenarios (situations that would lead to questions)
+•	Constructs questions from persona + scenario + knowledge graph
+
+Service Offering
+Synthetic Data Generation-as-a-Service: Fully Managed Test Data Creation
+1. Knowledge Graph & Transformation
+•	Document loading and knowledge graph node creation
+•	Default transformations (summaries, headlines, themes, NER, embeddings)
+•	Relationship mapping using cosine similarity and embeddings
+•	Custom transformation pipeline configuration
+2. Testset Generation
+•	Query synthesizer configuration (SingleHopSpecific, MultiHopAbstract, MultiHopSpecific)
+•	Persona and scenario generation using LLMs
+•	Testset size and query distribution planning
+•	Synthetic question, answer, and context generation
+3. Evaluation Integration
+•	Integration with evaluation frameworks
+•	Dataset creation and management
+•	Performance comparison and result reporting
+4. Continuous Management
+•	Testset expansion with new data
+•	Query refinement based on performance gaps
+•	New use case onboarding and rapid configuration
+________________________________________
+Target Market
+Primary Segments:
+•	Enterprise LLM deployments with RAG systems
+•	AI/ML teams building production LLM applications
+•	RAG system developers needing evaluation test data
+•	QA teams requiring comprehensive test datasets
+•	Organizations iterating on LLM performance
+Ideal Customer Profile:
+•	Companies with existing RAG/LLM implementations
+•	Teams needing early performance signal for LLM applications
+•	Organizations requiring iterative improvement capabilities
+•	Businesses lacking synthetic data generation expertise
+________________________________________
+Value Proposition
+"Evaluation Data Partner, Not a Tool Vendor"
+•	Fully managed end-to-end testset generation
+•	Production-ready synthetic data with proven quality
+•	Knowledge graph-based complex query generation
+•	Expert partnership without building internal data generation teams
+•	Continuous testset optimization and expansion
+•	Evaluation-ready datasets for iterative improvement
+________________________________________
+________________________________________
+Service Delivery Model
+1. Assessment Phase
+•	Data Analysis: Review source documents and use cases
+•	Evaluation Requirements: Understand evaluation goals and success criteria
+•	Testset Planning: Determine query types, distribution, and testset size
+2. Implementation Phase
+•	Knowledge Graph Construction: Build knowledge graph from documents
+•	Transformation Application: Apply default transforms (summaries, headlines, themes, NER)
+•	Query Synthesizer Setup: Configure SingleHopSpecific, MultiHopAbstract, MultiHopSpecific synthesizers
+•	Testset Generation: Generate synthetic questions, answers, and contexts using personas and scenarios
+•	Quality Validation: Verify testset quality and diversity
+•	Evaluation Integration: Integrate with evaluation frameworks and create datasets
+3. Managed Service Phase
+•	Continuous Monitoring: Track testset usage and evaluation results
+•	Testset Expansion: Generate additional test cases as new data arrives
+•	Query Refinement: Improve queries based on performance gaps
+•	Monthly Reports: Testset effectiveness, evaluation trends, recommendations
+•	Quarterly Reviews: Testset optimization, new query type integration, strategic planning
+•	Ongoing Updates: Testset expansion, new data integration, best practices
+
