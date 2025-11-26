@@ -225,4 +225,15 @@ Build brand recognition
 Success Metrics
 Business: MRR, LTV, Customer acquisition, Net revenue retention
 Service: Evaluation coverage, Metric accuracy, Customer satisfaction
+
 Market: Brand awareness, Market share, Partner contribution
+
+
+RAG Evaluation Metrics
+1. Faithfulness — Measures if answer is grounded in context; detects hallucinations
+2. Context Recall — Measures how much ground truth info is in retrieved context; evaluates retrieval effectiveness
+3. Context Precision — Measures relevance of retrieved context; evaluates retrieval precision
+4. Answer Relevancy — Measures answer relevance to question; evaluates answer quality
+5. Factual Correctness — Measures factual accuracy vs. ground truth; critical for production
+6. Context Entity Recall — Measures entity recall in retrieved context; important for entity-heavy queries
+7. Noise Sensitivity — Measures robustness to irrelevant context; evaluates noise filtering
